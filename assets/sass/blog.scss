@@ -1,0 +1,139 @@
+.addblog {
+  margin: 4vh 0;
+}
+
+.blogbox {
+  border-bottom: 2px solid $lightgrey; 
+  border-radius: 5px; 
+  margin-top:5vh;
+  margin-left: 7vw;
+  margin-right: 8vw;
+  h3 {
+    font-weight: 600;
+  }
+  h2 {
+    margin-bottom:10px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .vieweditdelete {
+    display: flex;
+    padding-bottom: 2vh;
+    .vieweditdeletebutton {
+      margin-right: 1vw;
+      button {
+        width: 100%;
+        padding: 1vh 4vh;
+        font-size: 16px;
+        border-radius: 80px;
+        text-align: center;
+        background-color: $white;
+        border: 1px solid $darkgreen;
+        margin-top: 0.6vh;
+      }
+      button:hover {
+        background-color: $green;
+      }
+    }
+  }
+}
+.blogbox:last-child {
+  border-bottom: 0;
+}
+
+.blogcontent { 
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+.blogcontent h3 { 
+  padding: 0 0 0 0;
+  text-align: left;
+}
+
+.blogcontent p { 
+  padding: 1vw 7vw 0 0.5vw;
+  line-height: 6vh;
+  text-align: left;
+}
+
+.blogcommentsection p { 
+  margin-top: 0vh;
+  margin-bottom: 0rem;
+}
+
+.blogcommentbox { 
+  width: 50%;
+  height: 8vh;
+  margin-left: 1px;
+}
+
+.blogimage {
+  max-width: 30%; 
+  height: auto;
+}
+
+.blogcommentsection button { 
+  display: block; 
+  margin-left: 1px; 
+  background-color: $bgcolor; 
+  border: 0px; color: black; 
+  font-weight: bold;
+}
+
+/* 
+@media (max-width: 991px) {
+  .blogimage {
+    width: 20vh;  }
+  }
+    
+@media (min-width: 1366px) {
+  .blogimage {
+      width: 40vh;  }
+}
+   */
+.blogcontent {
+  margin-top: 20px; 
+  border-radius: 5px; 
+  h3 { 
+    padding: 0 0 0 0; 
+    text-align: left; 
+  }
+  p { 
+    width:85%; 
+    line-height: 6vh; 
+    text-align: left; 
+    font-size: 16pt; 
+  }
+}
+
+.blogcommentsection {
+  margin-left: 8vw;
+  p { 
+    margin-top: 10px; 
+    margin-bottom: 0rem;
+  }
+  button {
+    display: block; 
+    margin-left: 1px; 
+    background-color: $bgcolor; 
+    border: 0px; 
+    color: $black; 
+    font-weight: bold;
+  }
+}
+ 
+.blogcommentbox {
+  width: 50%; 
+  height: 8vh; 
+  margin-left: 1px;
+}
+
+.blogimage {
+  max-width: 40%; 
+  height: auto; 
+  margin-bottom: 10px;
+}
