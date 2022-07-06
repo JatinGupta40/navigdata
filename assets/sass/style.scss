@@ -1,0 +1,249 @@
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: $white;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: $white;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: $white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: $limegreen;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #37517e;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #37517e;
+    border-top-color: $white;
+    border-bottom-color: $white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.loginpage { 
+  padding: 10vh;
+}
+
+.registrationpage {
+  // padding: 5vh;
+}
+
+@media (max-width:650px) {
+  .registrationpage { 
+    padding: 0vh;
+  }
+}
+
+// Header Tab Page
+.page {
+  padding: 3.5em 0 5em 0;
+  .profile {
+    .content {
+      border-radius: 5px;
+      border: 1px solid;
+      margin: 10px;
+      padding: 15px;
+      background-color: rgb(216, 216, 216);
+      font-weight: 550;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .experience {
+    h4 {
+      margin-top: 1rem;
+    }
+    ul {
+      i {
+        font-size: 20px;
+        margin-right: 8px;
+      }
+      li {
+        margin-left: 40px;
+        line-height: 28px;
+      }
+      .sub-category {
+        li {
+          list-style-type: none;
+          margin-left: 25px;
+        }
+      }
+      .category {
+        li {
+          margin-left: 0;
+        }
+      }
+      img {
+        height: 18px;
+        width: auto;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 2em 6vw 3em 6vw;
+    .experience {
+      ul {
+        margin-left: -30px;
+        margin-top: 15px;
+        .responsiveness {
+          margin-left: 0px;
+          .sub-category {
+            margin-left: 2px;
+          }
+        }
+        li {
+          margin-left: 30px;
+        }
+      }
+    }
+    // Data Challenge Tab.
+    .img {
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+    .link {
+      width: 100%;
+    }
+    .solution-approach {
+      h4 {
+        font-size: 18px;
+        text-align: left !important;
+      }
+      h5 {
+        width: 100% !important;
+      }
+      ul {
+        li {
+          margin-left: -15px;
+        }
+      }
+      .approach {
+        h5 {
+          width: 90% !important;
+          font-size: 20px;
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+.solution-approach {
+  font-size: 18px;
+  h4 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  h4:first-child {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  h5 {
+    left: 0;
+    width: 63%;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li:before {
+    content: '✓';
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: auto;
+    text-align: center;
+  }
+  .approach h5 {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+}
