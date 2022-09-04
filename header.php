@@ -58,12 +58,12 @@
                 <nav id="navbar" class="navbar">
                   <ul>
                   <?php 
-                    if(isset($_SESSION['loggedin']) || isset($_SESSION['success']))
+                    if(isset($_SESSION['loggedin']))
                     {
                   ?>
                       <li class="nav-link active"><a><u>Hello - <?php echo ucfirst($_SESSION['fname'])," ", ucfirst($_SESSION['lname']);?></u></a></li>
                       <li><a class="nav-link" href="about-us.php">About</a></li>
-                      <li><a class="nav-link" href="data-challenge.php">Data Challenge</a></li>
+                      <li><a class="nav-link" href="our-research.php">Our Research</a></li>
                       <li><a class="nav-link" href="solution-approach.php">Solution Approach</a></li>
                       <li><a class="nav-link" href="blogs.php">Blogs</a></li>
                       <li><a class="nav-link" href="fun-with-data.php">Fun with Data</a></li>
@@ -79,7 +79,7 @@
                     else {
                     ?>
                       <li><a class="nav-link" href="about-us.php">About</a></li>
-                      <li><a class="nav-link" href="data-challenge.php">Data Challenge</a></li>
+                      <li><a class="nav-link" href="our-research.php">Our Research</a></li>
                       <li><a class="nav-link" href="solution-approach.php">Solution Approach</a></li>
                       <li><a class="nav-link" href="blogs.php">Blogs</a></li>
                       <li><a class="nav-link" href="fun-with-data.php">Fun with Data</a></li>

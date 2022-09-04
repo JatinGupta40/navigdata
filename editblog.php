@@ -10,8 +10,8 @@
     $method = new methodQuery\method;
 
     // Fetching ID of user whose blog is needed to be edited.
-    $a = $_GET['id'];
-        
+    $getId = $_GET['id'];
+            
     if (empty($_SESSION['id'])) {
       header('index.php');
     }
@@ -47,10 +47,10 @@
         }
       }
       else {
-        $a = substr($a, strrpos($a, '/') + 1);
-        $res = $blog->updateBlog($title, $content, $a);
+        //$a = substr($a, strrpos($a, '/') + 1);
+        $res = $blog->updateBlog($title, $content, $getId);
         if ($res === TRUE) {
-          header('Location:blogslogin');
+          header('Location:blogs.php');
         }
         else {
           echo "Something Went Wrong";
@@ -59,7 +59,7 @@
     }
 ?>
 <?php 
-    $result = $blog->selectBlogEdit($a);
+    $result = $blog->selectBlogEdit($getId);
       if($result->num_rows > 0) {
         while ($row = $method->fetchAssoc($result)) {
           $id = $row['id'];

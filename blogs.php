@@ -8,19 +8,23 @@ $blog = new blogQuery\blog;
 $user = new userQuery\user;
 $method = new methodQuery\method;
 
-// echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
+  // echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
+  // Allowing to add blog to logged-in user only.
+  if(isset($_SESSION['loggedin']) == '') {  }
+  else {
 ?>
-  <div class="container">
-    <div class="addblog">
+  <div class="addMyBlog">
+    <div class="">
       <h2><a href="addblog.php">Add Blog</a></h2>
       <hr>
     </div>
-    <div class="myblog">
+    <div class="">
       <h2><u>My Blogs</u><i class="fas fa-caret-down"></i></h2>
     </div>
   </div>
 
 <?php
+  }
   // To Check who is visiting page, random or admin.
   if(isset($_SESSION['email']) == "admin@gmail.com" || isset($_SESSION['email']) == '') {
     // Fetching ell the blogs from the blog table.

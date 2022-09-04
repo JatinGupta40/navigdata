@@ -96,10 +96,6 @@ input[type=submit]:hover {
   padding: 10vh;
 }
 
-.registrationpage {
-  // padding: 5vh;
-}
-
 @media (max-width:650px) {
   .registrationpage { 
     padding: 0vh;
@@ -173,13 +169,7 @@ input[type=submit]:hover {
         }
       }
     }
-    // Data Challenge Tab.
-    .img {
-      img {
-        width: auto;
-        height: 100%;
-      }
-    }
+    // Our Research Tab.
     .link {
       width: 100%;
     }
