@@ -2,22 +2,28 @@
   margin: 4vh 0;
 }
 
+.viewblog {
+  margin: 4vw 0;
+}
+// This class is used in blog and article page, so for the, not using inside viewblog class.
 .blogbox {
   border-bottom: 2px solid $lightgrey; 
-  border-radius: 5px; 
+  border-radius: 5px;
   margin-top:5vh;
-  margin-left: 7vw;
+  margin-left: 6vw;
   margin-right: 8vw;
+  h2 {
+    margin-bottom:10px;
+    text-decoration: underline;
+    font-weight: 800;
+  }
   h3 {
     font-weight: 600;
   }
-  h2 {
-    margin-bottom:10px;
-  }
   p {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 1.5vw;
   }
   .vieweditdelete {
     display: flex;
@@ -40,49 +46,41 @@
     }
   }
 }
+
 .blogbox:last-child {
   border-bottom: 0;
 }
-
-.blogcontent { 
-  margin-top: 80px;
-  border-radius: 5px;
+.blogcommentsection {
+  margin-top: 4vh;
+  margin-left: 8vw;
+  textarea { 
+    width: 60%;
+    height:10vw;
+    margin-left: 1px;
+  }
+  p { 
+    margin-top: 10px; 
+    margin-bottom: 0rem;
+  }
+  button {
+    display: block; 
+    margin-left: 2px; 
+    margin-top: 2px; 
+    background-color: $bgcolor; 
+    border: 0px; 
+    color: $black; 
+    font-weight: bold;
+  }
 }
 
-.blogcontent h3 { 
-  padding: 0 0 0 0;
-  text-align: left;
+.addMyBlog {
+  margin: 8vh 10vw 6vh 5vw;
 }
 
-.blogcontent p { 
-  padding: 1vw 7vw 0 0.5vw;
-  line-height: 6vh;
-  text-align: left;
-}
-
-.blogcommentsection p { 
-  margin-top: 0vh;
-  margin-bottom: 0rem;
-}
-
-.blogcommentbox { 
-  width: 50%;
-  height: 8vh;
-  margin-left: 1px;
-}
-
-.blogimage {
-  max-width: 30%; 
-  height: auto;
-}
-
-.blogcommentsection button { 
-  display: block; 
-  margin-left: 1px; 
-  background-color: $bgcolor; 
-  border: 0px; color: black; 
-  font-weight: bold;
-}
+// .blogimage {
+//   max-width: 30%; 
+//   height: auto;
+// }
 
 /* 
 @media (max-width: 991px) {
@@ -95,45 +93,29 @@
       width: 40vh;  }
 }
    */
-.blogcontent {
-  margin-top: 20px; 
-  border-radius: 5px; 
-  h3 { 
-    padding: 0 0 0 0; 
-    text-align: left; 
-  }
-  p { 
-    width:85%; 
-    line-height: 6vh; 
-    text-align: left; 
-    font-size: 16pt; 
-  }
-}
+// .blogcontent {
+//   margin-top: 20px; 
+//   border-radius: 5px; 
+//   h3 { 
+//     padding: 0 0 0 0; 
+//     text-align: left; 
+//   }
+//   p { 
+//     width:85%; 
+//     line-height: 6vh; 
+//     text-align: left; 
+//     font-size: 16pt; 
+//   }
+// }
 
-.blogcommentsection {
-  margin-left: 8vw;
-  p { 
-    margin-top: 10px; 
-    margin-bottom: 0rem;
-  }
-  button {
-    display: block; 
-    margin-left: 1px; 
-    background-color: $bgcolor; 
-    border: 0px; 
-    color: $black; 
-    font-weight: bold;
-  }
-}
- 
-.blogcommentbox {
-  width: 50%; 
-  height: 8vh; 
-  margin-left: 1px;
-}
+// .blogcontent p { 
+//   padding: 1vw 7vw 0 0.5vw;
+//   line-height: 6vh;
+//   text-align: left;
+// }
 
-.blogimage {
-  max-width: 40%; 
-  height: auto; 
-  margin-bottom: 10px;
-}
+// .blogimage {
+//   max-width: 40%; 
+//   height: auto; 
+//   margin-bottom: 10px;
+// }

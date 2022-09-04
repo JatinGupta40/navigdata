@@ -55,7 +55,7 @@ class blog extends connection {
   }
   
   // Update a blog after editing.
-  public function updateBlog($id) {
+  public function updateBlog($title,$content,$id) {
     $result = mysqli_query($this->connection,"UPDATE blog SET Heading='$title', content='$content' WHERE id=$id");
     return $result;
   }

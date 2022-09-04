@@ -41,20 +41,6 @@
       {
         $comment == null;
       }
-      // $errors = array();
-      // if($heading == null) 
-      // {
-      //   $errors['heading'] = '* Heading is required. *';
-      // }
-      // if($content == null) 
-      // {
-      //   $errors['content'] = '* Heading is required. *';
-      // }
-      // if(!empty($_POST['heading']) && !empty($_POST['content']))
-      // {
-      //   echo "asdsad";
-      // }
-      
       $result = $blog->insertBlog($id, $heading, $content, $comment);
     }
 ?>

@@ -12,3 +12,4 @@ includes
 db/notes.sql
 db/db.php
 navigdata.sql
+.vscode
